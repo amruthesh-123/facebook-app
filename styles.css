@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    /* font-weight: 400; */
+    font-style: normal;
+}
+body{
+    background-color: rgb(241, 241, 241);
+}
+.navbar{
+    grid-area: navbar;
+    position: sticky;
+    top: 0;
+ 
+}
+.leftbar{
+    grid-area: leftbar;
+    /* background-color: bisque; */
+    position: fixed;
+    top: 80px;
+}
+/* .story{
+    grid-area: story;
+    background-color: blueviolet;
+}
+.share{
+    grid-area: share;
+    background-color: brown;
+} */
+.content-1{
+    grid-area: content-1;
+    /* background-color: red; */
+    /* border: 2px solid red; */
+}
+.right-bar{
+    grid-area: right-bar;
+    /* background-color: orange; */
+    position: fixed;
+    top: 80px;
+    right: 10px;
+}
+.facebook{
+    display: grid;
+    grid-template-areas:
+     'navbar navbar navbar navbar'
+     'leftbar content-1 content-1 right-bar'
+     'leftbar content-1 content-1 right-bar'
+     'leftbar content-1 content-1 right-bar';
+}
+
+.navbar{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px;
+    font-size: 22px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.navbar input{
+ border-radius: 16px;
+z-index: 0;
+padding: 10px 20px 10px 30px;
+border: none;
+background-color: rgb(241, 241, 241);
+
+}
+.navbar .fa-magnifying-glass{
+    position: absolute;
+    left: 5px;
+    z-index: 1;
+    font-size: 16px;
+    color: grey;
+   
+}
+.links-1 a{
+    padding: 10px 20px;
+    color: rgb(200, 199, 199);
+}
+
+
+.user-1 i{
+    padding: 8px;
+    background-color: rgb(227, 226, 226);
+    border-radius: 100%;
+}
+.user-1 a{
+    text-decoration: none;
+    
+}
+
+.user i{
+    padding: 8px;
+    /* background-color: rgb(227, 226, 226); */
+    border-radius: 100%;
+    background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+color: white;
+}
+
+.user{
+    display: flex; 
+    gap: 10px; 
+    align-items: center; 
+    padding: 15px 20px;
+    font-size: 16px;
+   
+}
+.user h4{
+    font-weight: 500;
+}
+
+.story i{
+    padding: 10px;
+    border-radius: 100%;
+    background-color: grey;
+    color: blue;
+    background-color: rgb(228, 228, 249);
+}
+.story{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px 250px 20px 15px;
+    margin: 10px auto ;
+    width: fit-content;
+    border-radius: 16px;
+    background-color: white;
+    
+}
+
+.post{
+    width: fit-content;
+    margin: 20px auto;
+    padding: 20px 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    background-color: white;
+}
+
+.post hr{
+    margin: 15px;
+    color: rgb(202, 200, 200);
+}
+.post-search{
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.post-icon{
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: grey;
+}
+.post-search input{
+    width: 470px;
+    border: none;
+    background-color: rgb(237, 236, 236);
+    border-radius: 16px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+
+.feed{
+    
+    width: fit-content;
+    margin: 10px auto;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    padding: 10px;
+    background-color: white;
+}
